@@ -107,7 +107,7 @@ const float zoom = 15.0f;
         restaurantLocation.latitude = 14.2190864;
         restaurantLocation.longitude = 121.0449656;
         
-        
+
         CLLocation *location = [[CLLocation alloc] initWithLatitude:restaurantLocation.latitude longitude:restaurantLocation.longitude];
         
         [self centerToLocation:location];

@@ -13,6 +13,18 @@
 		5BBA8EFE23793F65009AE2D1 /* MapsStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BBA8EFD23793F65009AE2D1 /* MapsStoryboard.storyboard */; };
 		5BBA8F002379452A009AE2D1 /* MapsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BBA8EFF2379452A009AE2D1 /* MapsView.xib */; };
 		5BBA8F032379453F009AE2D1 /* MapsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BBA8F022379453F009AE2D1 /* MapsView.m */; };
+		5BC55847237A58E100E71973 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5BC55846237A58E000E71973 /* GoogleService-Info.plist */; };
+		5BDFB2D2237A787900943A70 /* mainTabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BDFB2D1237A787900943A70 /* mainTabBar.storyboard */; };
+		5BDFB2E0237A7B4F00943A70 /* Chat.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BDFB2DF237A7B4F00943A70 /* Chat.storyboard */; };
+		5BDFB2EC237A80CC00943A70 /* LoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BDFB2EB237A80CC00943A70 /* LoginView.m */; };
+		5BDFB2EE237A80D600943A70 /* LoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BDFB2ED237A80D600943A70 /* LoginView.xib */; };
+		5BDFB2F1237A80E800943A70 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BDFB2F0237A80E800943A70 /* LoginViewController.m */; };
+		5BDFB2F4237A88F300943A70 /* ChannelsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BDFB2F3237A88F300943A70 /* ChannelsViewController.m */; };
+		5BDFB2F7237A892900943A70 /* ChanneTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BDFB2F6237A892900943A70 /* ChanneTableView.m */; };
+		5BDFB2F9237A893900943A70 /* ChannelTableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BDFB2F8237A893900943A70 /* ChannelTableView.xib */; };
+		5BDFB2FD237A895B00943A70 /* ChannelTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BDFB2FC237A895B00943A70 /* ChannelTableViewCell.m */; };
+		5BDFB2FF237A896B00943A70 /* ChannelTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BDFB2FE237A896B00943A70 /* ChannelTableViewCell.xib */; };
+		5BDFB307237A932700943A70 /* AppSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BDFB306237A932700943A70 /* AppSettings.m */; };
 		6227F588C89F5FDF272DAB8D /* Pods_iOSTrainingAPICalls.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D8D25CC8F6F802528A947D4 /* Pods_iOSTrainingAPICalls.framework */; };
 		A7046E67237518AF0016B2C4 /* HomeView.m in Sources */ = {isa = PBXBuildFile; fileRef = A7046E66237518AF0016B2C4 /* HomeView.m */; };
 		A7046E6A237518D00016B2C4 /* HomeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7046E69237518D00016B2C4 /* HomeView.xib */; };
@@ -68,6 +80,24 @@
 		5BBA8EFF2379452A009AE2D1 /* MapsView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MapsView.xib; sourceTree = "<group>"; };
 		5BBA8F012379453F009AE2D1 /* MapsView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MapsView.h; sourceTree = "<group>"; };
 		5BBA8F022379453F009AE2D1 /* MapsView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MapsView.m; sourceTree = "<group>"; };
+		5BC55846237A58E000E71973 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		5BDFB2D1237A787900943A70 /* mainTabBar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = mainTabBar.storyboard; sourceTree = "<group>"; };
+		5BDFB2DF237A7B4F00943A70 /* Chat.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Chat.storyboard; sourceTree = "<group>"; };
+		5BDFB2EA237A80CC00943A70 /* LoginView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginView.h; sourceTree = "<group>"; };
+		5BDFB2EB237A80CC00943A70 /* LoginView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginView.m; sourceTree = "<group>"; };
+		5BDFB2ED237A80D600943A70 /* LoginView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginView.xib; sourceTree = "<group>"; };
+		5BDFB2EF237A80E800943A70 /* LoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		5BDFB2F0237A80E800943A70 /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		5BDFB2F2237A88F300943A70 /* ChannelsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChannelsViewController.h; sourceTree = "<group>"; };
+		5BDFB2F3237A88F300943A70 /* ChannelsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChannelsViewController.m; sourceTree = "<group>"; };
+		5BDFB2F5237A892900943A70 /* ChanneTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChanneTableView.h; sourceTree = "<group>"; };
+		5BDFB2F6237A892900943A70 /* ChanneTableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChanneTableView.m; sourceTree = "<group>"; };
+		5BDFB2F8237A893900943A70 /* ChannelTableView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChannelTableView.xib; sourceTree = "<group>"; };
+		5BDFB2FB237A895B00943A70 /* ChannelTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChannelTableViewCell.h; sourceTree = "<group>"; };
+		5BDFB2FC237A895B00943A70 /* ChannelTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChannelTableViewCell.m; sourceTree = "<group>"; };
+		5BDFB2FE237A896B00943A70 /* ChannelTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChannelTableViewCell.xib; sourceTree = "<group>"; };
+		5BDFB306237A932700943A70 /* AppSettings.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppSettings.m; sourceTree = "<group>"; };
+		5BDFB309237AA8D200943A70 /* AppSettings.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppSettings.h; sourceTree = "<group>"; };
 		A7046E65237518AF0016B2C4 /* HomeView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeView.h; sourceTree = "<group>"; };
 		A7046E66237518AF0016B2C4 /* HomeView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeView.m; sourceTree = "<group>"; };
 		A7046E69237518D00016B2C4 /* HomeView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeView.xib; sourceTree = "<group>"; };
@@ -187,6 +217,148 @@
 			children = (
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		5BDFB2D0237A786400943A70 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				5BDFB2D1237A787900943A70 /* mainTabBar.storyboard */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		5BDFB2D3237A79B900943A70 /* Messaging */ = {
+			isa = PBXGroup;
+			children = (
+				5BDFB2DF237A7B4F00943A70 /* Chat.storyboard */,
+				5BDFB2E3237A7EEE00943A70 /* Chat */,
+				5BDFB2E2237A7EE300943A70 /* Channels */,
+				5BDFB2E1237A7EC400943A70 /* Login */,
+			);
+			path = Messaging;
+			sourceTree = "<group>";
+		};
+		5BDFB2D4237A79CE00943A70 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				5BDFB2EF237A80E800943A70 /* LoginViewController.h */,
+				5BDFB2F0237A80E800943A70 /* LoginViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		5BDFB2D5237A79D500943A70 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5BDFB2EA237A80CC00943A70 /* LoginView.h */,
+				5BDFB2EB237A80CC00943A70 /* LoginView.m */,
+				5BDFB2ED237A80D600943A70 /* LoginView.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		5BDFB2D6237A79DB00943A70 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		5BDFB2E1237A7EC400943A70 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				5BDFB2D6237A79DB00943A70 /* Models */,
+				5BDFB2D5237A79D500943A70 /* Views */,
+				5BDFB2D4237A79CE00943A70 /* Controllers */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		5BDFB2E2237A7EE300943A70 /* Channels */ = {
+			isa = PBXGroup;
+			children = (
+				5BDFB2E6237A7F2800943A70 /* Models */,
+				5BDFB2E5237A7F2300943A70 /* Views */,
+				5BDFB2E4237A7F1A00943A70 /* Controllers */,
+			);
+			path = Channels;
+			sourceTree = "<group>";
+		};
+		5BDFB2E3237A7EEE00943A70 /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				5BDFB2E9237A7F4800943A70 /* Model */,
+				5BDFB2E8237A7F4300943A70 /* Views */,
+				5BDFB2E7237A7F3600943A70 /* Controllers */,
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
+		5BDFB2E4237A7F1A00943A70 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				5BDFB2F2237A88F300943A70 /* ChannelsViewController.h */,
+				5BDFB2F3237A88F300943A70 /* ChannelsViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		5BDFB2E5237A7F2300943A70 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5BDFB2FA237A893E00943A70 /* Cells */,
+				5BDFB2F5237A892900943A70 /* ChanneTableView.h */,
+				5BDFB2F6237A892900943A70 /* ChanneTableView.m */,
+				5BDFB2F8237A893900943A70 /* ChannelTableView.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		5BDFB2E6237A7F2800943A70 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		5BDFB2E7237A7F3600943A70 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		5BDFB2E8237A7F4300943A70 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		5BDFB2E9237A7F4800943A70 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5BDFB2FA237A893E00943A70 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				5BDFB2FB237A895B00943A70 /* ChannelTableViewCell.h */,
+				5BDFB2FC237A895B00943A70 /* ChannelTableViewCell.m */,
+				5BDFB2FE237A896B00943A70 /* ChannelTableViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		5BDFB300237A91F400943A70 /* App Settings */ = {
+			isa = PBXGroup;
+			children = (
+				5BDFB309237AA8D200943A70 /* AppSettings.h */,
+				5BDFB306237A932700943A70 /* AppSettings.m */,
+			);
+			path = "App Settings";
 			sourceTree = "<group>";
 		};
 		66DEB08EFFB1126E58475D87 /* Pods */ = {
@@ -353,11 +525,15 @@
 		A7F678C4237515A000425CC7 /* iOSTrainingAPICalls */ = {
 			isa = PBXGroup;
 			children = (
+				5BDFB300237A91F400943A70 /* App Settings */,
+				5BDFB2D3237A79B900943A70 /* Messaging */,
+				5BDFB2D0237A786400943A70 /* TabBar */,
 				5BBA8EF623793CDD009AE2D1 /* Maps */,
 				A7046E61237518700016B2C4 /* Home */,
 				A7046E77237671B80016B2C4 /* Restaurants */,
 				A7046E912376A8750016B2C4 /* RestaurantDetails */,
 				A7F678C5237515A000425CC7 /* AppDelegate.h */,
+				5BC55846237A58E000E71973 /* GoogleService-Info.plist */,
 				A7F678C6237515A000425CC7 /* AppDelegate.m */,
 				A7F678CB237515A000425CC7 /* Main.storyboard */,
 				A7F678D1237515A100425CC7 /* Assets.xcassets */,
@@ -497,14 +673,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5BDFB2E0237A7B4F00943A70 /* Chat.storyboard in Resources */,
 				A7F678D5237515A100425CC7 /* LaunchScreen.storyboard in Resources */,
 				A7046E6A237518D00016B2C4 /* HomeView.xib in Resources */,
 				A7F678D2237515A100425CC7 /* Assets.xcassets in Resources */,
 				5BBA8F002379452A009AE2D1 /* MapsView.xib in Resources */,
+				5BDFB2FF237A896B00943A70 /* ChannelTableViewCell.xib in Resources */,
 				A7046E7323751AB00016B2C4 /* HomeTableViewCell.xib in Resources */,
 				A7046E9B2376A9D40016B2C4 /* RestaurantDetailsView.xib in Resources */,
 				5BBA8EFE23793F65009AE2D1 /* MapsStoryboard.storyboard in Resources */,
 				A7F678CD237515A000425CC7 /* Main.storyboard in Resources */,
+				5BDFB2F9237A893900943A70 /* ChannelTableView.xib in Resources */,
+				5BC55847237A58E100E71973 /* GoogleService-Info.plist in Resources */,
+				5BDFB2EE237A80D600943A70 /* LoginView.xib in Resources */,
+				5BDFB2D2237A787900943A70 /* mainTabBar.storyboard in Resources */,
 				A7046E8D2376819B0016B2C4 /* RestaurantsView.xib in Resources */,
 				A7046E8B237673240016B2C4 /* RestaurantViewCell.xib in Resources */,
 			);
@@ -670,14 +852,20 @@
 			files = (
 				A7F678D0237515A000425CC7 /* iOSTrainingAPICalls.xcdatamodeld in Sources */,
 				A7046E802376729F0016B2C4 /* RestaurantsView.m in Sources */,
+				5BDFB2F4237A88F300943A70 /* ChannelsViewController.m in Sources */,
 				A7046E7D2376723D0016B2C4 /* RestaurantsViewController.m in Sources */,
 				A7046E992376A9BA0016B2C4 /* RestaurantDetailsView.m in Sources */,
+				5BDFB307237A932700943A70 /* AppSettings.m in Sources */,
 				5BBA8F032379453F009AE2D1 /* MapsView.m in Sources */,
 				A7046E8A237673240016B2C4 /* RestaurantViewCell.m in Sources */,
 				A7046E67237518AF0016B2C4 /* HomeView.m in Sources */,
+				5BDFB2F7237A892900943A70 /* ChanneTableView.m in Sources */,
+				5BDFB2FD237A895B00943A70 /* ChannelTableViewCell.m in Sources */,
+				5BDFB2F1237A80E800943A70 /* LoginViewController.m in Sources */,
 				A7046E76237530E10016B2C4 /* Categories.m in Sources */,
 				A7046E962376A92B0016B2C4 /* RestaurantDetailsViewController.m in Sources */,
 				A7046E7223751AB00016B2C4 /* HomeTableViewCell.m in Sources */,
+				5BDFB2EC237A80CC00943A70 /* LoginView.m in Sources */,
 				A7F678D8237515A100425CC7 /* main.m in Sources */,
 				A7046E90237684AA0016B2C4 /* Restaurants.m in Sources */,
 				5BBA8EFC23793F56009AE2D1 /* MapsViewController.m in Sources */,
@@ -855,6 +1043,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = iOSTrainingAPICalls/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -872,6 +1061,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = iOSTrainingAPICalls/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
