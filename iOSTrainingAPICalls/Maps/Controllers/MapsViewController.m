@@ -81,13 +81,12 @@ const float zoom = 15.0f;
     
     CLLocation *location = [[CLLocation alloc] initWithLatitude:restaurantLocation.latitude longitude:restaurantLocation.longitude];
     
-    [self centerToLocation:location];
-    
     GMSCameraPosition *camera = [[GMSCameraPosition alloc] initWithLatitude:-33.86 longitude:151.20 zoom:zoom];
-    
-    NSLog(@"HEY --> %f %f", restaurantLocation.latitude, restaurantLocation.longitude);
-    self.mapsViewContainer.googleMapView.myLocationEnabled = YES;
     self.mapsViewContainer.googleMapView.camera = camera;
+    
+    self.mapsViewContainer.googleMapView.myLocationEnabled = YES;
+    
+    [self centerToLocation:location];
     
    
 
@@ -103,18 +102,18 @@ const float zoom = 15.0f;
         marker.snippet = @"Snippet";
         marker.map = self.mapsViewContainer.googleMapView;
         
+        
         CLLocationCoordinate2D restaurantLocation;
+        restaurantLocation.latitude = 14.2190864;
+        restaurantLocation.longitude = 121.0449656;
+        
         
         CLLocation *location = [[CLLocation alloc] initWithLatitude:restaurantLocation.latitude longitude:restaurantLocation.longitude];
         
         [self centerToLocation:location];
+
         
-        GMSCameraPosition *camera = [[GMSCameraPosition alloc] initWithLatitude:-33.86 longitude:151.20 zoom:zoom];
-        
-        NSLog(@"HEY --> %f %f", restaurantLocation.latitude, restaurantLocation.longitude);
-        self.mapsViewContainer.googleMapView.myLocationEnabled = YES;
-        self.mapsViewContainer.googleMapView.camera = camera;
-        
+
     }
     
 
