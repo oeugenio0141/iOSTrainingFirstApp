@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "Cells/RestaurantViewCell.h"
+#import <GoogleMaps/GoogleMaps.h>
 
 NS_ASSUME_NONNULL_BEGIN
 

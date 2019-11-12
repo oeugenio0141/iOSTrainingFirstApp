@@ -67,7 +67,7 @@
                     <navigationItem key="navigationItem" title="Title" id="h0o-vn-oS2">
                         <barButtonItem key="rightBarButtonItem" title="Maps" id="Eny-98-sUv">
                             <connections>
-                                <segue destination="nda-c7-c3V" kind="show" id="2JP-OI-e7R"/>
+                                <segue destination="nda-c7-c3V" kind="show" identifier="restaurantToMap" id="2JP-OI-e7R"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>

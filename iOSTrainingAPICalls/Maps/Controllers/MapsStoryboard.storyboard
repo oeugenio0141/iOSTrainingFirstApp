@@ -46,7 +46,11 @@
                         <viewLayoutGuide key="safeArea" id="KIG-bI-pUj"/>
                     </view>
                     <navigationItem key="navigationItem" title="Title" id="BXa-l8-gX1">
-                        <barButtonItem key="leftBarButtonItem" title="Back" id="kgd-5N-S3W"/>
+                        <barButtonItem key="leftBarButtonItem" title="Back" id="kgd-5N-S3W">
+                            <connections>
+                                <action selector="didTapMapBackButton:" destination="TsY-WJ-BeI" id="uVX-dS-qmf"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="t74-df-nJG" userLabel="First Responder" sceneMemberID="firstResponder"/>

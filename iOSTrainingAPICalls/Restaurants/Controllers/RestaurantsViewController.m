@@ -9,6 +9,7 @@
 #import "RestaurantsViewController.h"
 #import "../Views/Cells/RestaurantViewCell.h"
 #import "../../RestaurantDetails/Controllers/RestaurantDetailsViewController.h"
+#import "../../Maps/Controllers/MapsViewController.h"
 
 @interface RestaurantsViewController ()
 
@@ -42,11 +43,14 @@
                                  @"sort" : @"real_distance"
                                  };
     
+    
     AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
     manager.responseSerializer = [AFJSONResponseSerializer serializer];
     manager.requestSerializer = [AFJSONRequestSerializer serializer];
     [manager.requestSerializer setValue:apiKey forHTTPHeaderField:@"user-key"];
+    
     [manager GET:categoriesUrl parameters:parameters progress:nil success:^(NSURLSessionDataTask *task, id responseObject) {
+        
         NSDictionary *responseDictionary = responseObject;
         NSArray *responseArray = responseDictionary[@"restaurants"];
         NSLog(@"%@", responseArray);
@@ -63,13 +67,17 @@
             restaurant.restaurantCuisines = responseCategory[@"cuisines"];
             restaurant.restaurantTiming = responseCategory[@"timings"];
             restaurant.restaurantAverageCostForTwo = [responseCategory[@"average_cost_for_two"] floatValue];
+            restaurant.restaurantLatitude = location[@"latitude"];
+            restaurant.restaurantLongitude = location[@"longitude"];
+            
             [self.restaurants addObject:restaurant];
+        
         }
         dispatch_async(dispatch_get_main_queue(), ^{
             [self.restaurantsView.restaurantsCollectionView reloadData];
             [self.restaurantsView.restaurantsActivityIndicator stopAnimating];
         });
-//        NSLog(@"Restaurants: %@", responseObject);
+      
     } failure:^(NSURLSessionDataTask *operation, NSError *error) {
         NSLog(@"Error: %@", error);
     }];
@@ -97,6 +105,7 @@
             });
         }
     });
+    
     return cell;
 }
 
@@ -123,11 +132,27 @@
     [self performSegueWithIdentifier:@"collectionToDetails" sender:nil];
 }
 
+//- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+//    if ([segue.identifier isEqualToString:@"collectionToDetails"]) {
+//        RestaurantDetailsViewController *restaurantDetailsVc = [segue destinationViewController];
+//        restaurantDetailsVc.restaurant = self.restaurant;
+//        NSLog(@"Object: %@,", self.restaurant.restaurantName);
+//    }
+//}
+
+
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    
     if ([segue.identifier isEqualToString:@"collectionToDetails"]) {
         RestaurantDetailsViewController *restaurantDetailsVc = [segue destinationViewController];
         restaurantDetailsVc.restaurant = self.restaurant;
         NSLog(@"Object: %@,", self.restaurant.restaurantName);
+        
+    } else if ([segue.identifier isEqualToString:@"restaurantToMap"]) {
+        UINavigationController *navVc = [segue destinationViewController];
+        MapsViewController *mapVc = navVc.viewControllers[0];
+        mapVc.restaurants = self.restaurants;
+        
     }
 }
 

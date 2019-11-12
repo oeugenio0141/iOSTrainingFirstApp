@@ -8,12 +8,18 @@
 
 #import <UIKit/UIKit.h>
 #import "../Views/MapsView.h"
+#import <GoogleMaps/GoogleMaps.h>
+#import <CoreLocation/CoreLocation.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface MapsViewController : UIViewController
+@interface MapsViewController : UIViewController <CLLocationManagerDelegate, GMSMapViewDelegate>
 
-@property (strong, nonatomic) MapsView *mapsView;
+@property (strong, nonatomic) MapsView *mapsViewContainer;
+@property (strong, nonatomic) CLLocationManager *locationManager;
+@property (strong, nonatomic) NSMutableArray *restaurants;
+
+
 
 @end
 
