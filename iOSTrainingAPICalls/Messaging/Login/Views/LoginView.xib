@@ -30,7 +30,7 @@
                         <action selector="didTapLoginButton:" destination="hET-ZL-73a" eventType="touchUpInside" id="t4V-fe-3mP"/>
                     </connections>
                 </button>
-                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dE8-Q9-zei">
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter you name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dE8-Q9-zei">
                     <rect key="frame" x="16" y="390" width="382" height="40"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="40" id="DvP-tb-NA9"/>
@@ -52,7 +52,7 @@
             </constraints>
             <viewLayoutGuide key="safeArea" id="yhs-Wb-ugZ"/>
             <connections>
-                <outlet property="loginButton" destination="GyP-SX-Zoj" id="8J8-Jw-YgR"/>
+                <outlet property="loginButton" destination="GyP-SX-Zoj" id="75F-hR-IUc"/>
                 <outlet property="loginTextField" destination="dE8-Q9-zei" id="3V1-5k-h4b"/>
             </connections>
             <point key="canvasLocation" x="274" y="-55"/>

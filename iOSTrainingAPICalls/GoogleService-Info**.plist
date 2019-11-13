@@ -3,21 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>CLIENT_ID</key>
-	<string>209178874115-c3c2ab54b88cljav0upnhvblcagr5koq.apps.googleusercontent.com</string>
+	<string>757020256784-sk63op177gklt74ur0o7h1h6khh43gri.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.209178874115-c3c2ab54b88cljav0upnhvblcagr5koq</string>
+	<string>com.googleusercontent.apps.757020256784-sk63op177gklt74ur0o7h1h6khh43gri</string>
 	<key>API_KEY</key>
-	<string>AIzaSyC8zRBzpWvw2CHqcfv8njDPhQKHRDN_w5E</string>
+	<string>AIzaSyCgmfe3SzfbvWWGPfVLLevTs_OIFj3nHp4</string>
 	<key>GCM_SENDER_ID</key>
-	<string>209178874115</string>
+	<string>757020256784</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>com.zmjy.NotifTutorial</string>
+	<string>com.jeyo.iOSTrainingAPICalls</string>
 	<key>PROJECT_ID</key>
-	<string>zmjy-mytutorial</string>
+	<string>myfirstiosapp-258705</string>
 	<key>STORAGE_BUCKET</key>
-	<string>zmjy-mytutorial.appspot.com</string>
+	<string>myfirstiosapp-258705.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<false></false>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -29,8 +29,8 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:209178874115:ios:701693f6b55e087470d936</string>
+	<string>1:757020256784:ios:df531dc7b7255f6d02f895</string>
 	<key>DATABASE_URL</key>
-	<string>https://zmjy-mytutorial.firebaseio.com</string>
+	<string>https://myfirstiosapp-258705.firebaseio.com</string>
 </dict>
 </plist>

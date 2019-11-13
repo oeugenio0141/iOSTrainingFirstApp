@@ -30,10 +30,10 @@
             </objects>
             <point key="canvasLocation" x="55" y="1"/>
         </scene>
-        <!--View Controller-->
+        <!--Channels View Controller-->
         <scene sceneID="0pA-GU-xfP">
             <objects>
-                <viewController id="wFJ-Le-lXa" sceneMemberID="viewController">
+                <viewController id="wFJ-Le-lXa" customClass="ChannelsViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kjB-Ee-ufM">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -44,21 +44,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kMt-ut-rfF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="826" y="1"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="q54-xY-YFZ">
-            <objects>
-                <viewController id="M1f-gF-20e" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="7cL-B3-dHY">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="BDK-10-jg2"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Otj-Yg-VaO" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1594" y="-1"/>
         </scene>
     </scenes>
 </document>

@@ -8,14 +8,21 @@
 
 #import <UIKit/UIKit.h>
 #import "../Views/ChanneTableView.h"
+#import <FirebaseFirestore/FirebaseFirestore.h>
+#import <FirebaseStorage/FirebaseStorage.h>
+#import "../Models/ChannelModel.h"
+#import "../../Chat/Controllers/ChatViewController.h"
 
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface ChannelsViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
-
+@interface ChannelsViewController : UIViewController <UITableViewDelegate, UITableViewDataSource, ChannelDelegate>
 
 @property (strong, nonatomic) ChanneTableView *channelTableViewContainer;
+@property (strong, nonatomic) NSArray *sampleData;
+
+//Firebase
+//@property (strong, nonatomic) FIRStorageReference *ref;
 
 
 @end

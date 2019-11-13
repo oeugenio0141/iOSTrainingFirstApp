@@ -7,7 +7,6 @@
 //
 
 #import "LoginViewController.h"
-#import "../Views/LoginView.h"
 #import "../../../App Settings/AppSettings.h"
 
 
@@ -33,13 +32,21 @@
 }
 
 - (void)didTapLoginButton{
-    NSString *username = _loginView.loginTextField.text;
-    
-    [AppSettings.shared setUsername:username];
+   
     
     [[FIRAuth auth] signInAnonymouslyWithCompletion:^(FIRAuthDataResult * _Nullable authResult, NSError * _Nullable error) {
+        
+        NSString *username = self.loginView.loginTextField.text;
+        
         [self performSegueWithIdentifier:@"channelSegue" sender:self];
+        
+        [AppSettings.shared setUsername:username];
+        
+       
+
     }];
+    
+    
     
 }
 

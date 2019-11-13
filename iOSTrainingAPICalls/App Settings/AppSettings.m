@@ -6,8 +6,11 @@
 //  Copyright © 2019 OPSolutions. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+
 #import "AppSettings.h"
+
+
+const NSString *kUsernameKey = @"username";
 
 @implementation AppSettings
 
@@ -21,7 +24,9 @@
 
 
 - (void)setUsername:(NSString *)username{
-    [NSUserDefaults setValue:username forKey:kUsernameKey];
+    
+    [[NSUserDefaults standardUserDefaults] setObject:username forKey:kUsernameKey];
+   
     
 }
 

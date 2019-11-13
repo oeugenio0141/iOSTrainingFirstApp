@@ -11,11 +11,13 @@ target 'iOSTrainingAPICalls' do
     pod 'GooglePlaces'
     pod 'Firebase/Analytics'
 
+
     # Pods for chat tutorial
     pod 'Firebase/Core'
     pod 'Firebase/Auth'
     pod 'Firebase/Storage'
     pod 'Firebase/Firestore'
+    pod 'Firebase/Database'
     pod 'JSQMessagesViewController', :git => 'https://github.com/FWAlex/JSQMessagesViewController.git'
 
   target 'iOSTrainingAPICallsTests' do

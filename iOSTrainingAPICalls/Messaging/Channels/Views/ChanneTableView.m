@@ -18,4 +18,20 @@
 }
 */
 
+- (IBAction)didTapChannelsBackButton:(id)sender {
+    
+    if (self.channelDelegate && [self.channelDelegate respondsToSelector:@selector(didTapChannelsBackButton)]){
+        [self.channelDelegate didTapChannelsBackButton];
+    }
+    
+}
+
+- (IBAction)addChannelButton:(id)sender {
+    
+    if (self.channelDelegate && [self.channelDelegate respondsToSelector:@selector(didTapAddChannelButton)]){
+        [self.channelDelegate didTapAddChannelButton];
+    }
+    
+    
+}
 @end

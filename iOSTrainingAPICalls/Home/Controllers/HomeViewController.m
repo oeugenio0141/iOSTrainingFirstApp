@@ -17,6 +17,7 @@
 @implementation HomeViewController
 
 - (void)viewDidLoad {
+    
     [super viewDidLoad];
     self.homeView = (HomeView *)[[[NSBundle mainBundle] loadNibNamed:@"HomeView" owner:self options:nil] objectAtIndex:0];
     self.homeView.homeTableView.delegate = self;
@@ -28,6 +29,7 @@
     self.navigationItem.title = @"Categories";
     [self.homeView.homeTableView registerNib:[UINib nibWithNibName:@"HomeTableViewCell" bundle:nil] forCellReuseIdentifier:@"homeCell"];
     [self getCategories];
+    
 }
 
 - (void) getCategories {

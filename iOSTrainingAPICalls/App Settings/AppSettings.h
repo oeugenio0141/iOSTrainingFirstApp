@@ -8,11 +8,10 @@
 
 #import <Foundation/Foundation.h>
 
-
 #ifndef AppSettings_h
 #define AppSettings_h
 
-const NSString *kUsernameKey = @"username";
+
 
 @interface AppSettings : NSObject
 
