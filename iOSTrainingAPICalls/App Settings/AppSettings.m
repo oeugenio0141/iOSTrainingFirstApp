@@ -9,8 +9,9 @@
 
 #import "AppSettings.h"
 
+NSString *const kUsernameKey = @"username";
 
-const NSString *kUsernameKey = @"username";
+//const NSString *kUsernameKey = @"username";
 
 @implementation AppSettings
 
@@ -25,14 +26,23 @@ const NSString *kUsernameKey = @"username";
 
 - (void)setUsername:(NSString *)username{
     
-    [[NSUserDefaults standardUserDefaults] setObject:username forKey:kUsernameKey];
+    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
    
+    [userDefaults setValue:username forKey:@"username"];
+    
+    //[[NSUserDefaults standardUserDefaults] setObject:username forKey:kUsernameKey];
     
 }
 
 - (NSString *)getUsername{
+    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
     
-    return [NSUserDefaults valueForKey:kUsernameKey];
+    return [userDefaults objectForKey:@"username"];
 }
 
+
+- (void)clearUsername {
+    
+    [[NSUserDefaults standardUserDefaults] setObject:nil forKey:kUsernameKey];
+}
 @end

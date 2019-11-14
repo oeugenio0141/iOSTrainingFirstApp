@@ -29,6 +29,9 @@
 		5BDFB2FD237A895B00943A70 /* ChannelTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BDFB2FC237A895B00943A70 /* ChannelTableViewCell.m */; };
 		5BDFB2FF237A896B00943A70 /* ChannelTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BDFB2FE237A896B00943A70 /* ChannelTableViewCell.xib */; };
 		5BDFB307237A932700943A70 /* AppSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BDFB306237A932700943A70 /* AppSettings.m */; };
+		5BFA0908237CD9CA0032E3E2 /* Index.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BFA0907237CD9CA0032E3E2 /* Index.storyboard */; };
+		5BFA090B237CDC7E0032E3E2 /* IndexViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BFA090A237CDC7E0032E3E2 /* IndexViewController.m */; };
+		5BFA090E237D42840032E3E2 /* TypingModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BFA090D237D42840032E3E2 /* TypingModel.m */; };
 		6227F588C89F5FDF272DAB8D /* Pods_iOSTrainingAPICalls.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D8D25CC8F6F802528A947D4 /* Pods_iOSTrainingAPICalls.framework */; };
 		A7046E67237518AF0016B2C4 /* HomeView.m in Sources */ = {isa = PBXBuildFile; fileRef = A7046E66237518AF0016B2C4 /* HomeView.m */; };
 		A7046E6A237518D00016B2C4 /* HomeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7046E69237518D00016B2C4 /* HomeView.xib */; };
@@ -110,6 +113,11 @@
 		5BDFB2FE237A896B00943A70 /* ChannelTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChannelTableViewCell.xib; sourceTree = "<group>"; };
 		5BDFB306237A932700943A70 /* AppSettings.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppSettings.m; sourceTree = "<group>"; };
 		5BDFB309237AA8D200943A70 /* AppSettings.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppSettings.h; sourceTree = "<group>"; };
+		5BFA0907237CD9CA0032E3E2 /* Index.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Index.storyboard; sourceTree = "<group>"; };
+		5BFA0909237CDC7E0032E3E2 /* IndexViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IndexViewController.h; sourceTree = "<group>"; };
+		5BFA090A237CDC7E0032E3E2 /* IndexViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IndexViewController.m; sourceTree = "<group>"; };
+		5BFA090C237D42840032E3E2 /* TypingModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TypingModel.h; sourceTree = "<group>"; };
+		5BFA090D237D42840032E3E2 /* TypingModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TypingModel.m; sourceTree = "<group>"; };
 		A7046E65237518AF0016B2C4 /* HomeView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeView.h; sourceTree = "<group>"; };
 		A7046E66237518AF0016B2C4 /* HomeView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeView.m; sourceTree = "<group>"; };
 		A7046E69237518D00016B2C4 /* HomeView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeView.xib; sourceTree = "<group>"; };
@@ -357,6 +365,8 @@
 		5BDFB2E9237A7F4800943A70 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				5BFA090C237D42840032E3E2 /* TypingModel.h */,
+				5BFA090D237D42840032E3E2 /* TypingModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -378,6 +388,16 @@
 				5BDFB306237A932700943A70 /* AppSettings.m */,
 			);
 			path = "App Settings";
+			sourceTree = "<group>";
+		};
+		5BFA0906237CD9AF0032E3E2 /* Index */ = {
+			isa = PBXGroup;
+			children = (
+				5BFA0907237CD9CA0032E3E2 /* Index.storyboard */,
+				5BFA0909237CDC7E0032E3E2 /* IndexViewController.h */,
+				5BFA090A237CDC7E0032E3E2 /* IndexViewController.m */,
+			);
+			path = Index;
 			sourceTree = "<group>";
 		};
 		66DEB08EFFB1126E58475D87 /* Pods */ = {
@@ -544,9 +564,10 @@
 		A7F678C4237515A000425CC7 /* iOSTrainingAPICalls */ = {
 			isa = PBXGroup;
 			children = (
+				5BFA0906237CD9AF0032E3E2 /* Index */,
+				5BDFB2D0237A786400943A70 /* TabBar */,
 				5BDFB300237A91F400943A70 /* App Settings */,
 				5BDFB2D3237A79B900943A70 /* Messaging */,
-				5BDFB2D0237A786400943A70 /* TabBar */,
 				5BBA8EF623793CDD009AE2D1 /* Maps */,
 				A7046E61237518700016B2C4 /* Home */,
 				A7046E77237671B80016B2C4 /* Restaurants */,
@@ -696,6 +717,7 @@
 				5BDFB2E0237A7B4F00943A70 /* Chat.storyboard in Resources */,
 				A7F678D5237515A100425CC7 /* LaunchScreen.storyboard in Resources */,
 				A7046E6A237518D00016B2C4 /* HomeView.xib in Resources */,
+				5BFA0908237CD9CA0032E3E2 /* Index.storyboard in Resources */,
 				A7F678D2237515A100425CC7 /* Assets.xcassets in Resources */,
 				5BBA8F002379452A009AE2D1 /* MapsView.xib in Resources */,
 				5BDFB2FF237A896B00943A70 /* ChannelTableViewCell.xib in Resources */,
@@ -879,6 +901,7 @@
 				A7046E992376A9BA0016B2C4 /* RestaurantDetailsView.m in Sources */,
 				5BDFB307237A932700943A70 /* AppSettings.m in Sources */,
 				5BBA8F032379453F009AE2D1 /* MapsView.m in Sources */,
+				5BFA090E237D42840032E3E2 /* TypingModel.m in Sources */,
 				5B5731F8237B9C1B003E7050 /* ChannelModel.m in Sources */,
 				A7046E8A237673240016B2C4 /* RestaurantViewCell.m in Sources */,
 				A7046E67237518AF0016B2C4 /* HomeView.m in Sources */,
@@ -895,6 +918,7 @@
 				A7046E6D237518E50016B2C4 /* HomeViewController.m in Sources */,
 				A7F678C7237515A000425CC7 /* AppDelegate.m in Sources */,
 				5B5731FC237BE3BC003E7050 /* MessageModel.m in Sources */,
+				5BFA090B237CDC7E0032E3E2 /* IndexViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

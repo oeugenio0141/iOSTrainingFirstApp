@@ -143,7 +143,7 @@
                 <outlet property="restaurantRatingLabel" destination="DhD-Vn-wAY" id="bCN-ey-pVw"/>
                 <outlet property="restaurantTiming" destination="6b1-Mm-N4D" id="GGB-j9-IEu"/>
             </connections>
-            <point key="canvasLocation" x="122.40000000000001" y="109.29535232383809"/>
+            <point key="canvasLocation" x="91" y="-100"/>
         </view>
     </objects>
 </document>

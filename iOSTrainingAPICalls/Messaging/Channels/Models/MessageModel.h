@@ -15,22 +15,8 @@ NS_ASSUME_NONNULL_BEGIN
 @interface MessageModel : JSQMessage <DatabasePresentation>
 
 
-//@property NSString * senderId;
-//@property NSString * senderDisplayName;
-//@property NSDate * date;
-//@property NSString * text;
-
 + (instancetype)initWith:(NSString *)senderId senderDisplayName:(NSString *)senderName date:(NSDate *)date text:(NSString *)text;
 
-
-
-
-
-//+ (instancetype)initWith:(NSString *)channelName {
-//    ChannelModel * channel = [[ChannelModel alloc] init];
-//    channel.channelName = channelName;
-//    return channel;
-//}
 @end
 
 NS_ASSUME_NONNULL_END

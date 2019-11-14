@@ -16,10 +16,7 @@
 @property NSMutableArray * channels;
 
 
-
-
 @end
-
 
 NSString * cellIdentifier = @"channelCell";
 
@@ -27,11 +24,6 @@ NSString * cellIdentifier = @"channelCell";
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    _firestoreDb = [FIRFirestore firestore];
-    //_channelRef = [_firestoreDb collectionWithPath:@"channels"];
-    _channelRef = [_firestoreDb collectionWithPath:@"channel"];
-    
     
     self.channelTableViewContainer = (ChanneTableView *)[[[NSBundle mainBundle] loadNibNamed:@"ChannelTableView" owner:self options:nil] objectAtIndex:0];
     
@@ -94,6 +86,9 @@ NSString * cellIdentifier = @"channelCell";
     
     NSString *channelName = textField.text;
     
+    
+   // + (instancetype)initWithChannel:(ChannelModel *)channel user:(FIRUser *)user{
+
     ChannelModel *channel = [ChannelModel initWith:channelName];
     [_channelRef addDocumentWithData:[channel representation] completion:^(NSError * _Nullable error){
         NSString * title = @"Success";
@@ -106,8 +101,6 @@ NSString * cellIdentifier = @"channelCell";
         [vc showAlertWith:title and:message];
     
         }];
-        
-
     
 }
 
@@ -162,6 +155,7 @@ NSString * cellIdentifier = @"channelCell";
         default:
             break;
     }
+    
   
 }
 
@@ -240,15 +234,19 @@ NSString * cellIdentifier = @"channelCell";
         return;
     }
     
-    ChatViewController * vc = [ChatViewController initWithChannel:channel];
+    ChatViewController * vc = [ChatViewController initWithChannel:channel user:_currentUser];
+    
+//    ChatViewController * vc = [ChatViewController initWithChannel:channel];
     
     if ([self navigationController] != nil) {
         
-        [[self navigationController] presentViewController:vc animated:YES completion:nil];
+        [[self navigationController] showViewController:vc sender:nil];
         
     } else{
         
-        [self presentViewController:vc animated:YES completion:nil];
+        [self showViewController:vc sender:nil];
+        
+//        [self presentViewController:vc animated:YES completion:nil];
         
     }
 

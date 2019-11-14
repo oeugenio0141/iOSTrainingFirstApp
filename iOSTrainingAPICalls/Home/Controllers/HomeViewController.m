@@ -30,6 +30,7 @@
     [self.homeView.homeTableView registerNib:[UINib nibWithNibName:@"HomeTableViewCell" bundle:nil] forCellReuseIdentifier:@"homeCell"];
     [self getCategories];
     
+        
 }
 
 - (void) getCategories {

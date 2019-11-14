@@ -15,14 +15,14 @@
     NSDictionary * data = document.data;
     NSString * senderId = data[@"senderId"];
     NSString * senderName = data[@"senderName"];
-    NSDate * date = data[@"date"];
+    FIRTimestamp * date = data[@"date"];
     NSString * text = data[@"text"];
     if (senderId == nil) {
         return nil;
     }
     
   
-    MessageModel * message = [[MessageModel alloc] initWithSenderId:senderId senderDisplayName:senderName date:date text:text];
+    MessageModel * message = [[MessageModel alloc] initWithSenderId:senderId senderDisplayName:senderName date:[date dateValue] text:text];
     
 
     return message;

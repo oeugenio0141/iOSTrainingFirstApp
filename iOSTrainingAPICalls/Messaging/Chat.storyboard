@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="gUg-hc-xQt">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Be5-8v-oOk">
     <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Chat-->
+        <!--Login View Controller-->
         <scene sceneID="zuI-0a-mwg">
             <objects>
                 <viewController id="gUg-hc-xQt" customClass="LoginViewController" sceneMemberID="viewController">
@@ -20,7 +20,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="xHE-rn-yv4"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Chat" id="qhs-VJ-0hu"/>
+                    <navigationItem key="navigationItem" id="Mgb-pA-xdn"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <segue destination="wFJ-Le-lXa" kind="show" identifier="channelSegue" id="Ten-RR-rlX"/>
@@ -28,7 +28,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="O7a-7X-Niy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="55" y="1"/>
+            <point key="canvasLocation" x="963.76811594202911" y="0.6696428571428571"/>
         </scene>
         <!--Channels View Controller-->
         <scene sceneID="0pA-GU-xfP">
@@ -43,7 +43,28 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kMt-ut-rfF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="826" y="1"/>
+            <point key="canvasLocation" x="1734.7826086956522" y="0.6696428571428571"/>
+        </scene>
+        <!--Chat-->
+        <scene sceneID="OT1-hi-Mk5">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Be5-8v-oOk" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Chat" id="qhs-VJ-0hu">
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-10"/>
+                    </tabBarItem>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="skj-GP-gsr">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="gUg-hc-xQt" kind="relationship" relationship="rootViewController" id="yAp-eN-Daq"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6eZ-3I-waW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="193" y="1"/>
         </scene>
     </scenes>
 </document>

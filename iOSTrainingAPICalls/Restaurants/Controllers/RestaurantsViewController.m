@@ -132,14 +132,6 @@
     [self performSegueWithIdentifier:@"collectionToDetails" sender:nil];
 }
 
-//- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-//    if ([segue.identifier isEqualToString:@"collectionToDetails"]) {
-//        RestaurantDetailsViewController *restaurantDetailsVc = [segue destinationViewController];
-//        restaurantDetailsVc.restaurant = self.restaurant;
-//        NSLog(@"Object: %@,", self.restaurant.restaurantName);
-//    }
-//}
-
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     

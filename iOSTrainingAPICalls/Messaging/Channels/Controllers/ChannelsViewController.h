@@ -20,6 +20,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (strong, nonatomic) ChanneTableView *channelTableViewContainer;
 @property (strong, nonatomic) NSArray *sampleData;
+@property FIRUser *currentUser;
+
+
 
 //Firebase
 //@property (strong, nonatomic) FIRStorageReference *ref;
