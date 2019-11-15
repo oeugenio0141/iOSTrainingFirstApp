@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Be5-8v-oOk">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="PHh-Qd-r8x">
     <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -10,61 +10,53 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Login View Controller-->
-        <scene sceneID="zuI-0a-mwg">
+        <!--Navigation Controller-->
+        <scene sceneID="u8m-3O-95w">
             <objects>
-                <viewController id="gUg-hc-xQt" customClass="LoginViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="s6N-Pu-coF">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="xHE-rn-yv4"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="Mgb-pA-xdn"/>
-                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
-                    <connections>
-                        <segue destination="wFJ-Le-lXa" kind="show" identifier="channelSegue" id="Ten-RR-rlX"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="O7a-7X-Niy" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="963.76811594202911" y="0.6696428571428571"/>
-        </scene>
-        <!--Channels View Controller-->
-        <scene sceneID="0pA-GU-xfP">
-            <objects>
-                <viewController id="wFJ-Le-lXa" customClass="ChannelsViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="kjB-Ee-ufM">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="cqA-NT-vv3"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="kMt-ut-rfF" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1734.7826086956522" y="0.6696428571428571"/>
-        </scene>
-        <!--Chat-->
-        <scene sceneID="OT1-hi-Mk5">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Be5-8v-oOk" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Chat" id="qhs-VJ-0hu">
-                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-10"/>
-                    </tabBarItem>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="PHh-Qd-r8x" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="skj-GP-gsr">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="P49-ax-a8e">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="gUg-hc-xQt" kind="relationship" relationship="rootViewController" id="yAp-eN-Daq"/>
+                        <segue destination="3L6-rQ-sMy" kind="relationship" relationship="rootViewController" id="VsB-iA-g1f"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="6eZ-3I-waW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hFa-uy-hFJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="193" y="1"/>
+            <point key="canvasLocation" x="1036" y="1"/>
+        </scene>
+        <!--CHANNELS-->
+        <scene sceneID="d1c-5z-v9R">
+            <objects>
+                <viewController hidesBottomBarWhenPushed="YES" id="3L6-rQ-sMy" customClass="ChannelsViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Opp-p8-J1z">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="bZd-UN-nvv"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="CHANNELS" id="WW2-BK-qM4">
+                        <barButtonItem key="leftBarButtonItem" title="Sign out" id="xw3-qE-O4d">
+                            <connections>
+                                <action selector="didTapSignOut:" destination="3L6-rQ-sMy" id="zCR-JW-fqm"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Add +" id="LRo-wW-fM9">
+                            <connections>
+                                <action selector="didTapAddButton:" destination="3L6-rQ-sMy" id="kwI-7o-Hte"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="didTapAddNewChannelButton" destination="LRo-wW-fM9" id="bxx-u7-LT7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="67U-gs-hu7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1861" y="1"/>
         </scene>
     </scenes>
 </document>

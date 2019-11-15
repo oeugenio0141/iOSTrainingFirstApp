@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="PRq-oc-q1H">
-    <device id="retina6_1" orientation="portrait">
+    <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,48 +15,9 @@
             <objects>
                 <viewController id="PRq-oc-q1H" customClass="IndexViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="CAS-4g-GWU">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to my" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VXs-wd-izd">
-                                <rect key="frame" x="16" y="244" width="382" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="First iOS Application" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dyV-kG-e72">
-                                <rect key="frame" x="16" y="314" width="382" height="37"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="31"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mzc-KK-G9v">
-                                <rect key="frame" x="16" y="391" width="382" height="40"/>
-                                <color key="backgroundColor" red="1" green="0.50196078430000002" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="zmI-Sx-bGB"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
-                                <state key="normal" title="PROCEED">
-                                    <color key="titleColor" red="0.96862745100000003" green="0.97647058819999999" blue="0.98431372549999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="didTapProceed:" destination="PRq-oc-q1H" eventType="touchUpInside" id="1H4-fr-SCc"/>
-                                </connections>
-                            </button>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="dyV-kG-e72" firstAttribute="top" secondItem="VXs-wd-izd" secondAttribute="bottom" constant="40" id="45L-AB-dje"/>
-                            <constraint firstItem="PYq-IY-6XJ" firstAttribute="trailing" secondItem="VXs-wd-izd" secondAttribute="trailing" constant="16" id="OOt-zn-blE"/>
-                            <constraint firstItem="mzc-KK-G9v" firstAttribute="leading" secondItem="PYq-IY-6XJ" secondAttribute="leading" constant="16" id="Sty-w6-faV"/>
-                            <constraint firstItem="VXs-wd-izd" firstAttribute="top" secondItem="PYq-IY-6XJ" secondAttribute="top" constant="200" id="UGi-Qj-sLy"/>
-                            <constraint firstItem="VXs-wd-izd" firstAttribute="leading" secondItem="PYq-IY-6XJ" secondAttribute="leading" constant="16" id="Xun-6l-qTC"/>
-                            <constraint firstItem="PYq-IY-6XJ" firstAttribute="trailing" secondItem="dyV-kG-e72" secondAttribute="trailing" constant="16" id="Yg5-g8-lwI"/>
-                            <constraint firstItem="PYq-IY-6XJ" firstAttribute="trailing" secondItem="mzc-KK-G9v" secondAttribute="trailing" constant="16" id="hpA-TL-ufl"/>
-                            <constraint firstItem="dyV-kG-e72" firstAttribute="leading" secondItem="PYq-IY-6XJ" secondAttribute="leading" constant="16" id="hxg-Ws-IkF"/>
-                            <constraint firstItem="mzc-KK-G9v" firstAttribute="top" secondItem="dyV-kG-e72" secondAttribute="bottom" constant="40" id="n4g-ih-d1X"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="PYq-IY-6XJ"/>
                     </view>
                     <connections>

@@ -33,11 +33,6 @@
     
 }
 
-//+ (instancetype)initWithChannel:(ChannelModel *)channel{
-//    ChatViewController * instance = [[ChatViewController alloc] initWithNibName:nil bundle:nil];
-//    instance.channel = channel;
-//    return instance;
-//}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -45,7 +40,6 @@
     
     [self setUp];
     [self setupInterface];
-    
     
 }
 
@@ -194,14 +188,12 @@
     
     }
     
-
     return [[NSMutableAttributedString alloc] initWithString:formattedDate];
     
 }
 
 - (void)didPressSendButton:(UIButton *)button withMessageText:(NSString *)text senderId:(NSString *)senderId senderDisplayName:(NSString *)senderDisplayName date:(NSDate *)date{
     MessageModel  * msg = [MessageModel messageWithSenderId:senderId displayName:senderDisplayName text:text];
-    
     
     [self sendMessage:msg];
     
@@ -218,23 +210,6 @@
     }];
 }
 
-- (void)didPressAccessoryButton:(UIButton *)sender{
-    
-}
-
-- (BOOL)showTypingIndicator{
-    return YES;
-}
-
-- (void)textViewDidChange:(UITextView *)textView{
-    
-    
-}
-
-- (void)textViewDidEndEditing:(UITextView *)textView{
-    
-    
-}
 
 //User Details
 - (NSString *)senderId{

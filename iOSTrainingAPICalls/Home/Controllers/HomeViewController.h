@@ -20,6 +20,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property (strong, readwrite) NSMutableArray *categories;
 @property (strong, nonatomic) NSString *categoryId;
 
+- (IBAction)didTapHome:(id)sender;
+
 @end
 
 NS_ASSUME_NONNULL_END

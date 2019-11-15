@@ -21,6 +21,8 @@
 
 - (NSString *)getUsername;
 
+- (void)clearUsername;
+
 @end
 
 #endif /* AppSettings_h */

@@ -16,72 +16,20 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QgO-T9-EFL">
-                    <rect key="frame" x="0.0" y="44" width="414" height="79"/>
-                    <subviews>
-                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="w69-j4-5wb">
-                            <rect key="frame" x="16" y="39" width="382" height="30"/>
-                            <subviews>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KQq-P8-eEf">
-                                    <rect key="frame" x="0.0" y="0.0" width="127.5" height="30"/>
-                                    <state key="normal" title="Logout"/>
-                                    <connections>
-                                        <action selector="didTapChannelsBackButton:" destination="dTY-Ux-GWH" eventType="touchUpInside" id="O3C-5e-Kz4"/>
-                                    </connections>
-                                </button>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CHANNEL" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Idf-BF-P6S">
-                                    <rect key="frame" x="127.5" y="5" width="127" height="20.5"/>
-                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                    <nil key="textColor"/>
-                                    <nil key="highlightedColor"/>
-                                </label>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q6Y-lp-dCO">
-                                    <rect key="frame" x="254.5" y="0.0" width="127.5" height="30"/>
-                                    <state key="normal" title="+ Add"/>
-                                    <connections>
-                                        <action selector="addChannelButton:" destination="dTY-Ux-GWH" eventType="touchUpInside" id="ZYC-55-NpG"/>
-                                    </connections>
-                                </button>
-                            </subviews>
-                        </stackView>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome User" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p0F-8V-5b6">
-                            <rect key="frame" x="16" y="5" width="382" height="14"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                            <nil key="textColor"/>
-                            <nil key="highlightedColor"/>
-                        </label>
-                    </subviews>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    <constraints>
-                        <constraint firstItem="p0F-8V-5b6" firstAttribute="top" secondItem="QgO-T9-EFL" secondAttribute="top" constant="5" id="CPY-bC-bmA"/>
-                        <constraint firstAttribute="height" constant="79" id="Ikz-ZO-hWD"/>
-                        <constraint firstAttribute="bottom" secondItem="w69-j4-5wb" secondAttribute="bottom" constant="10" id="KAd-a4-aSn"/>
-                        <constraint firstItem="w69-j4-5wb" firstAttribute="top" secondItem="p0F-8V-5b6" secondAttribute="bottom" constant="20" id="MEB-xM-yAJ"/>
-                        <constraint firstAttribute="trailing" secondItem="p0F-8V-5b6" secondAttribute="trailing" constant="16" id="QCJ-SR-oNm"/>
-                        <constraint firstItem="p0F-8V-5b6" firstAttribute="leading" secondItem="QgO-T9-EFL" secondAttribute="leading" constant="16" id="j9N-Gv-PYh"/>
-                        <constraint firstAttribute="trailing" secondItem="w69-j4-5wb" secondAttribute="trailing" constant="16" id="jfQ-A5-g4x"/>
-                        <constraint firstItem="w69-j4-5wb" firstAttribute="leading" secondItem="QgO-T9-EFL" secondAttribute="leading" constant="16" id="riJ-0x-QkX"/>
-                    </constraints>
-                </view>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Uqs-Vm-RTO">
-                    <rect key="frame" x="0.0" y="123" width="414" height="739"/>
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 </tableView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
-                <constraint firstItem="kZU-aG-ozg" firstAttribute="trailing" secondItem="QgO-T9-EFL" secondAttribute="trailing" id="5Tc-AJ-SJr"/>
-                <constraint firstItem="QgO-T9-EFL" firstAttribute="leading" secondItem="kZU-aG-ozg" secondAttribute="leading" id="7AM-2x-FJK"/>
+                <constraint firstItem="Uqs-Vm-RTO" firstAttribute="top" secondItem="kZU-aG-ozg" secondAttribute="top" id="32w-Xb-4XR"/>
                 <constraint firstItem="kZU-aG-ozg" firstAttribute="bottom" secondItem="Uqs-Vm-RTO" secondAttribute="bottom" id="Ty6-iE-9eQ"/>
-                <constraint firstItem="Uqs-Vm-RTO" firstAttribute="top" secondItem="QgO-T9-EFL" secondAttribute="bottom" id="jc5-7i-yMN"/>
                 <constraint firstItem="kZU-aG-ozg" firstAttribute="trailing" secondItem="Uqs-Vm-RTO" secondAttribute="trailing" id="mtk-ZM-KtP"/>
                 <constraint firstItem="Uqs-Vm-RTO" firstAttribute="leading" secondItem="kZU-aG-ozg" secondAttribute="leading" id="vAU-TO-Y0r"/>
-                <constraint firstItem="QgO-T9-EFL" firstAttribute="top" secondItem="kZU-aG-ozg" secondAttribute="top" id="yXa-VC-aJH"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="kZU-aG-ozg"/>
             <connections>
-                <outlet property="addChannelButton" destination="q6Y-lp-dCO" id="rQw-XJ-FSC"/>
-                <outlet property="channelBackButton" destination="KQq-P8-eEf" id="Lfg-0o-1kL"/>
                 <outlet property="channelTableView" destination="Uqs-Vm-RTO" id="6jC-N7-Pg8"/>
             </connections>
             <point key="canvasLocation" x="-14.492753623188406" y="-123.21428571428571"/>

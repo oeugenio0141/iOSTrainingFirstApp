@@ -6,12 +6,19 @@
 //  Copyright © 2019 OPSolutions. All rights reserved.
 //
 
+
 #import <UIKit/UIKit.h>
+#import "../Views/IndexView.h"
+
+
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface IndexViewController : UIViewController
-- (IBAction)didTapProceed:(id)sender;
+@interface IndexViewController : UIViewController <ProceedDelegate>
+
+@property (strong, nonatomic) IndexView * indexView;
+
+
 
 @end
 

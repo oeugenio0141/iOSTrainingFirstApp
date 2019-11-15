@@ -12,12 +12,10 @@
 #import <JSQMessagesViewController/JSQMessagesBubbleImageFactory.h>
 #import <JSQMessagesViewController/JSQMessagesAvatarImageFactory.h>
 
-
-
 #import "../../Channels/Models/ChannelModel.h"
 #import "../../Channels/Models/MessageModel.h"
 #import "../../../App Settings/AppSettings.h"
-#import "../Model/TypingModel.h"
+
 
 NS_ASSUME_NONNULL_BEGIN
 

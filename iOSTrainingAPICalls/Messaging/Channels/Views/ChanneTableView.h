@@ -14,7 +14,8 @@
 @required
 
 - (void)didTapAddChannelButton;
-- (void)didTapChannelsBackButton;
+
+- (void)didTapAddNewChannelButton;
 
 @end
 

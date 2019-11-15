@@ -22,7 +22,10 @@ NS_ASSUME_NONNULL_BEGIN
 @property (strong, nonatomic) NSArray *sampleData;
 @property FIRUser *currentUser;
 
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *didTapAddNewChannelButton;
 
+- (IBAction)didTapAddButton:(id)sender;
+- (IBAction)didTapSignOut:(id)sender;
 
 //Firebase
 //@property (strong, nonatomic) FIRStorageReference *ref;

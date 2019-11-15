@@ -9,10 +9,13 @@
 /* Begin PBXBuildFile section */
 		0AB267E31D0008044D495A28 /* Pods_iOSTrainingAPICalls_iOSTrainingAPICallsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4191799A0AC457377C1AA8DA /* Pods_iOSTrainingAPICalls_iOSTrainingAPICallsUITests.framework */; };
 		0E8850B5AA8A3888A10DB9ED /* Pods_iOSTrainingAPICallsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF27498301E7B158D70ADFE5 /* Pods_iOSTrainingAPICallsTests.framework */; };
+		5B180510237D92A9008AC05E /* IndexView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B18050F237D92A9008AC05E /* IndexView.m */; };
+		5B180512237D92FD008AC05E /* IndexView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B180511237D92FD008AC05E /* IndexView.xib */; };
 		5B5731F5237B99C6003E7050 /* ChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B5731F4237B99C6003E7050 /* ChatViewController.m */; };
 		5B5731F8237B9C1B003E7050 /* ChannelModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B5731F7237B9C1B003E7050 /* ChannelModel.m */; };
 		5B5731FC237BE3BC003E7050 /* MessageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B5731FB237BE3BC003E7050 /* MessageModel.m */; };
 		5B5731FE237BF79C003E7050 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5B5731FD237BF79C003E7050 /* GoogleService-Info.plist */; };
+		5BA5A73A237E2B45001776A0 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BA5A739237E2B45001776A0 /* Login.storyboard */; };
 		5BBA8EFC23793F56009AE2D1 /* MapsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BBA8EFB23793F56009AE2D1 /* MapsViewController.m */; };
 		5BBA8EFE23793F65009AE2D1 /* MapsStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BBA8EFD23793F65009AE2D1 /* MapsStoryboard.storyboard */; };
 		5BBA8F002379452A009AE2D1 /* MapsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BBA8EFF2379452A009AE2D1 /* MapsView.xib */; };
@@ -31,7 +34,6 @@
 		5BDFB307237A932700943A70 /* AppSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BDFB306237A932700943A70 /* AppSettings.m */; };
 		5BFA0908237CD9CA0032E3E2 /* Index.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BFA0907237CD9CA0032E3E2 /* Index.storyboard */; };
 		5BFA090B237CDC7E0032E3E2 /* IndexViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BFA090A237CDC7E0032E3E2 /* IndexViewController.m */; };
-		5BFA090E237D42840032E3E2 /* TypingModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BFA090D237D42840032E3E2 /* TypingModel.m */; };
 		6227F588C89F5FDF272DAB8D /* Pods_iOSTrainingAPICalls.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D8D25CC8F6F802528A947D4 /* Pods_iOSTrainingAPICalls.framework */; };
 		A7046E67237518AF0016B2C4 /* HomeView.m in Sources */ = {isa = PBXBuildFile; fileRef = A7046E66237518AF0016B2C4 /* HomeView.m */; };
 		A7046E6A237518D00016B2C4 /* HomeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7046E69237518D00016B2C4 /* HomeView.xib */; };
@@ -81,6 +83,9 @@
 		23EC4B48A1F9D7926509ABCB /* Pods-iOSTrainingAPICalls.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSTrainingAPICalls.release.xcconfig"; path = "Target Support Files/Pods-iOSTrainingAPICalls/Pods-iOSTrainingAPICalls.release.xcconfig"; sourceTree = "<group>"; };
 		4191799A0AC457377C1AA8DA /* Pods_iOSTrainingAPICalls_iOSTrainingAPICallsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOSTrainingAPICalls_iOSTrainingAPICallsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C81F46C478C5EE7F4A552FB /* Pods-iOSTrainingAPICalls-iOSTrainingAPICallsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSTrainingAPICalls-iOSTrainingAPICallsUITests.debug.xcconfig"; path = "Target Support Files/Pods-iOSTrainingAPICalls-iOSTrainingAPICallsUITests/Pods-iOSTrainingAPICalls-iOSTrainingAPICallsUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		5B18050E237D92A9008AC05E /* IndexView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IndexView.h; sourceTree = "<group>"; };
+		5B18050F237D92A9008AC05E /* IndexView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IndexView.m; sourceTree = "<group>"; };
+		5B180511237D92FD008AC05E /* IndexView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IndexView.xib; sourceTree = "<group>"; };
 		5B5731F3237B99C6003E7050 /* ChatViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChatViewController.h; sourceTree = "<group>"; };
 		5B5731F4237B99C6003E7050 /* ChatViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChatViewController.m; sourceTree = "<group>"; };
 		5B5731F6237B9C1B003E7050 /* ChannelModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChannelModel.h; sourceTree = "<group>"; };
@@ -89,6 +94,7 @@
 		5B5731FA237BE3BC003E7050 /* MessageModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MessageModel.h; sourceTree = "<group>"; };
 		5B5731FB237BE3BC003E7050 /* MessageModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MessageModel.m; sourceTree = "<group>"; };
 		5B5731FD237BF79C003E7050 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		5BA5A739237E2B45001776A0 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		5BBA8EFA23793F56009AE2D1 /* MapsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MapsViewController.h; sourceTree = "<group>"; };
 		5BBA8EFB23793F56009AE2D1 /* MapsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MapsViewController.m; sourceTree = "<group>"; };
 		5BBA8EFD23793F65009AE2D1 /* MapsStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MapsStoryboard.storyboard; sourceTree = "<group>"; };
@@ -116,8 +122,6 @@
 		5BFA0907237CD9CA0032E3E2 /* Index.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Index.storyboard; sourceTree = "<group>"; };
 		5BFA0909237CDC7E0032E3E2 /* IndexViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IndexViewController.h; sourceTree = "<group>"; };
 		5BFA090A237CDC7E0032E3E2 /* IndexViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IndexViewController.m; sourceTree = "<group>"; };
-		5BFA090C237D42840032E3E2 /* TypingModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TypingModel.h; sourceTree = "<group>"; };
-		5BFA090D237D42840032E3E2 /* TypingModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TypingModel.m; sourceTree = "<group>"; };
 		A7046E65237518AF0016B2C4 /* HomeView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeView.h; sourceTree = "<group>"; };
 		A7046E66237518AF0016B2C4 /* HomeView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeView.m; sourceTree = "<group>"; };
 		A7046E69237518D00016B2C4 /* HomeView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeView.xib; sourceTree = "<group>"; };
@@ -202,6 +206,32 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		5B18050B237D926F008AC05E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				5BFA0909237CDC7E0032E3E2 /* IndexViewController.h */,
+				5BFA090A237CDC7E0032E3E2 /* IndexViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		5B18050C237D927E008AC05E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5B18050E237D92A9008AC05E /* IndexView.h */,
+				5B18050F237D92A9008AC05E /* IndexView.m */,
+				5B180511237D92FD008AC05E /* IndexView.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		5B18050D237D9289008AC05E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		5BBA8EF623793CDD009AE2D1 /* Maps */ = {
 			isa = PBXGroup;
 			children = (
@@ -251,6 +281,7 @@
 			isa = PBXGroup;
 			children = (
 				5BDFB2DF237A7B4F00943A70 /* Chat.storyboard */,
+				5BA5A739237E2B45001776A0 /* Login.storyboard */,
 				5BDFB2E3237A7EEE00943A70 /* Chat */,
 				5BDFB2E2237A7EE300943A70 /* Channels */,
 				5BDFB2E1237A7EC400943A70 /* Login */,
@@ -365,8 +396,6 @@
 		5BDFB2E9237A7F4800943A70 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				5BFA090C237D42840032E3E2 /* TypingModel.h */,
-				5BFA090D237D42840032E3E2 /* TypingModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -393,9 +422,10 @@
 		5BFA0906237CD9AF0032E3E2 /* Index */ = {
 			isa = PBXGroup;
 			children = (
+				5B18050D237D9289008AC05E /* Models */,
+				5B18050C237D927E008AC05E /* Views */,
+				5B18050B237D926F008AC05E /* Controllers */,
 				5BFA0907237CD9CA0032E3E2 /* Index.storyboard */,
-				5BFA0909237CDC7E0032E3E2 /* IndexViewController.h */,
-				5BFA090A237CDC7E0032E3E2 /* IndexViewController.m */,
 			);
 			path = Index;
 			sourceTree = "<group>";
@@ -722,9 +752,11 @@
 				5BBA8F002379452A009AE2D1 /* MapsView.xib in Resources */,
 				5BDFB2FF237A896B00943A70 /* ChannelTableViewCell.xib in Resources */,
 				A7046E7323751AB00016B2C4 /* HomeTableViewCell.xib in Resources */,
+				5BA5A73A237E2B45001776A0 /* Login.storyboard in Resources */,
 				5B5731FE237BF79C003E7050 /* GoogleService-Info.plist in Resources */,
 				A7046E9B2376A9D40016B2C4 /* RestaurantDetailsView.xib in Resources */,
 				5BBA8EFE23793F65009AE2D1 /* MapsStoryboard.storyboard in Resources */,
+				5B180512237D92FD008AC05E /* IndexView.xib in Resources */,
 				A7F678CD237515A000425CC7 /* Main.storyboard in Resources */,
 				5BDFB2F9237A893900943A70 /* ChannelTableView.xib in Resources */,
 				5BC55847237A58E100E71973 /* GoogleService-Info**.plist in Resources */,
@@ -901,9 +933,9 @@
 				A7046E992376A9BA0016B2C4 /* RestaurantDetailsView.m in Sources */,
 				5BDFB307237A932700943A70 /* AppSettings.m in Sources */,
 				5BBA8F032379453F009AE2D1 /* MapsView.m in Sources */,
-				5BFA090E237D42840032E3E2 /* TypingModel.m in Sources */,
 				5B5731F8237B9C1B003E7050 /* ChannelModel.m in Sources */,
 				A7046E8A237673240016B2C4 /* RestaurantViewCell.m in Sources */,
+				5B180510237D92A9008AC05E /* IndexView.m in Sources */,
 				A7046E67237518AF0016B2C4 /* HomeView.m in Sources */,
 				5BDFB2F7237A892900943A70 /* ChanneTableView.m in Sources */,
 				5BDFB2FD237A895B00943A70 /* ChannelTableViewCell.m in Sources */,

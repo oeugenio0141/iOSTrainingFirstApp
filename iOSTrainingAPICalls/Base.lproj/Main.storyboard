@@ -40,7 +40,13 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" id="puz-oh-xQK"/>
+                    <navigationItem key="navigationItem" id="puz-oh-xQK">
+                        <barButtonItem key="leftBarButtonItem" title="Home" id="Bo1-EJ-btO">
+                            <connections>
+                                <action selector="didTapHome:" destination="BYZ-38-t0r" id="D5W-Y3-baP"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <segue destination="Tqq-4C-li8" kind="show" identifier="categoryToCollection" id="XLv-CY-yQF"/>
                     </connections>
@@ -97,7 +103,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="z1I-vW-LgQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1775" y="97"/>
+            <point key="canvasLocation" x="1769" y="81"/>
         </scene>
     </scenes>
 </document>

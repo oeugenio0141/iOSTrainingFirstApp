@@ -42,7 +42,6 @@ NSString *const kUsernameKey = @"username";
 
 
 - (void)clearUsername {
-    
     [[NSUserDefaults standardUserDefaults] setObject:nil forKey:kUsernameKey];
 }
 @end

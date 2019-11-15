@@ -30,20 +30,23 @@
     
     self.loginView.loginDelegate = self;
     
+
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
     
     if ([segue.identifier isEqualToString:@"channelSegue"]) {
-     
-        ChannelsViewController * vc = segue.destinationViewController;
+        UINavigationController * vVC = [segue destinationViewController];
+        ChannelsViewController * vc = vVC.viewControllers[0];
+        if ([vc isKindOfClass:ChannelsViewController.self]) {
+            NSLog(@"test");
+        }
         FIRUser *user = sender;
         vc.currentUser = user;
         
     }
     
 }
-
 
 - (void)didTapLoginButton{
    
@@ -59,6 +62,7 @@
         }
         
         [self performSegueWithIdentifier:@"channelSegue" sender:[authResult user]];
+        self.loginView.loginTextField.text = @"";
         
 //        [AppSettings.shared setUsername:username];
         

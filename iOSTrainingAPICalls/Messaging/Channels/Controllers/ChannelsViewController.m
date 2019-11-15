@@ -15,10 +15,10 @@
 @property UIAlertController *alertController;
 @property NSMutableArray * channels;
 
-
 @end
 
 NSString * cellIdentifier = @"channelCell";
+
 
 @implementation ChannelsViewController
 
@@ -40,41 +40,45 @@ NSString * cellIdentifier = @"channelCell";
     [self.channelTableViewContainer.channelTableView registerNib:[UINib nibWithNibName:@"ChannelTableViewCell" bundle:nil] forCellReuseIdentifier:@"channelCell"];
     
     self.channelTableViewContainer.channelDelegate = self;
+
     
     [self setUp];
     
     
+    
 }
 
-- (void)didTapChannelsBackButton{
+- (IBAction)didTapAddButton:(id)sender {
     
+        UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Create Channel" message:@"Input a channel name" preferredStyle:UIAlertControllerStyleAlert];
+    
+        UIAlertAction * ok = [UIAlertAction actionWithTitle:@"SAVE" style:UIAlertActionStyleDefault handler:^(UIAlertAction * action) {
+            [self didTapSave];
+        }];
+    
+        UIAlertAction * cancel = [UIAlertAction actionWithTitle:@"CANCEL" style:UIAlertActionStyleDestructive handler:^(UIAlertAction * action) {
+    
+        }];
+    
+        [alert addAction:ok];
+        [alert addTextFieldWithConfigurationHandler:^(UITextField * _Nonnull textField) {
+            textField.placeholder = @"Channel name here";
+        }];
+    
+        [alert addAction:cancel];
+        [self presentViewController:alert animated:YES completion:nil];
+        _alertController = alert;
+    
+    
+}
+
+- (IBAction)didTapSignOut:(id)sender {
+    [[FIRAuth auth] signOut:nil];
+    [AppSettings.shared clearUsername];
     [self dismissViewControllerAnimated:YES completion:nil];
-
+    
 }
 
-- (void)didTapAddChannelButton{
-    
-    UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Create Channel" message:@"Input a channel name" preferredStyle:UIAlertControllerStyleAlert];
-    
-    UIAlertAction * ok = [UIAlertAction actionWithTitle:@"SAVE" style:UIAlertActionStyleDefault handler:^(UIAlertAction * action) {
-        [self didTapSave];
-    }];
-    
-    UIAlertAction * cancel = [UIAlertAction actionWithTitle:@"CANCEL" style:UIAlertActionStyleDestructive handler:^(UIAlertAction * action) {
-        
-    }];
-    
-    [alert addAction:ok];
-    [alert addTextFieldWithConfigurationHandler:^(UITextField * _Nonnull textField) {
-        textField.placeholder = @"Channel name here";
-    }];
-    
-    [alert addAction:cancel];
-    [self presentViewController:alert animated:YES completion:nil];
-    _alertController = alert;
- 
-
-}
 
 - (void)didTapSave{
     UITextField * textField = _alertController.textFields[0];
@@ -82,13 +86,12 @@ NSString * cellIdentifier = @"channelCell";
     if (textField == nil) {
         return;
     }
+    
     ChannelsViewController *vc = self;
     
     NSString *channelName = textField.text;
     
     
-   // + (instancetype)initWithChannel:(ChannelModel *)channel user:(FIRUser *)user{
-
     ChannelModel *channel = [ChannelModel initWith:channelName];
     [_channelRef addDocumentWithData:[channel representation] completion:^(NSError * _Nullable error){
         NSString * title = @"Success";
@@ -236,7 +239,6 @@ NSString * cellIdentifier = @"channelCell";
     
     ChatViewController * vc = [ChatViewController initWithChannel:channel user:_currentUser];
     
-//    ChatViewController * vc = [ChatViewController initWithChannel:channel];
     
     if ([self navigationController] != nil) {
         
@@ -246,18 +248,11 @@ NSString * cellIdentifier = @"channelCell";
         
         [self showViewController:vc sender:nil];
         
-//        [self presentViewController:vc animated:YES completion:nil];
         
     }
 
 }
 
-- (void)verifyChannel{
-    
-
-    
-    
-}
 
 
 @end
